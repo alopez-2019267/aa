@@ -1,0 +1,138 @@
+.task-list-tasks-container {
+    height: 300px; /* ajusta la altura según tus necesidades */
+    overflow-y: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-list-tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .task-list-task {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .task-list-task:last-child {
+    border-bottom: none;
+  }
+  
+  .task-list-task--high {
+    background-color: #F39494;
+  }
+  
+  .task-list-task--medium {
+    background-color: #fffde7;
+  }
+  
+  .task-list-task--low {
+    background-color: #e8f5e9;
+  }
+  
+  .dashboard-container {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .task-list-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .task-list-controls button {
+    margin-left: 10px;
+  }
+  
+  .task-list-tasks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .task-list-task {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .task-list {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-list h1 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .task-list form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .task-list form div {
+    margin-bottom: 10px;
+  }
+  
+  .task-list form div:nth-child(2n + 3) {
+    grid-column: 1 / 3;
+  }
+  
+  .task-list form button {
+    grid-column: 1 / 3;
+    margin-top: 10px;
+  }
+  
+  .task-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .task-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .task-list li h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .task-list li p {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .task-list form {
+      grid-template-columns: 1fr;
+    }
+  
+    .task-list form div:nth-child(2n + 3) {
+      grid-column: initial;
+    }
+  
+    .task-list form button {
+      grid-column: initial;
+    }
+  }
