@@ -1,0 +1,286 @@
+/* Fondo página */
+body{
+  background-image: url('../../img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.logo {
+  max-width: 100px; /* Adjust the value to make the logo smaller */
+  height: 100%;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 50px; /* Adjust the value to make the logo smaller on smaller screens */
+  }
+}
+
+/* Contenedor del tablero */
+.dashboard-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Lista de tareas */
+.task-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 4px solid #4CAF50; /* Cambiado el color del borde */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #E8F5E9; /* Cambiado el color de fondo */
+}
+
+/* Contenedor principal */
+.task-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Contenedor de la lista de tareas */
+.task-container-list {
+  flex-direction: column;
+  padding: 1em;
+}
+
+/* Contenedor de las tareas */
+.task-list-tasks-container {
+  height: 30em;
+  line-height: 1em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 2px solid #4CAF50; /* Cambiado el color del borde */
+  margin: 10px;
+}
+
+/* Tareas */
+.task-list-task {
+  flex: 1 0 100%; 
+  padding: 2em;
+  border: 1px solid #4CAF50; /* Cambiado el color del borde */
+  transition: background-color 0.3s ease;
+  background-color: #FFFFFF; /* Cambiado el color de fondo */
+  color: #333; /* Cambiado el color del texto */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/* Efecto de hover para las tareas */
+.task-list-task:hover {
+  background-color: #E0F2F1; /* Cambiado el color de fondo al pasar el ratón */
+  cursor: pointer;
+}
+
+/* Título de la lista de tareas */
+.task-list h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #4CAF50; /* Cambiado el color del texto */
+}
+
+/* Controles de la lista de tareas */
+.task-list-controls {
+  margin: 10px;
+}
+
+/* Botones de los controles */
+.task-list-controls button {
+  margin-left: 10px;
+  background-color: #4CAF50; /* Cambiado el color del botón */
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Efecto de hover para botones */
+.task-list-controls button:hover {
+  background-color: #388E3C; /* Cambiado el color del botón al pasar el ratón */
+}
+
+/* Formulario de la lista de tareas */
+.task-list-form {
+  background-color: #FFFFFF; /* Cambiado el color de fondo */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Divs del formulario */
+.task-list form div {
+  margin-bottom: 10px;
+}
+
+/* Botón del formulario */
+.task-list form button {
+  grid-column: span 2;
+  margin-top: 10px;
+}
+
+/* Lista de tareas */
+.task-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Elementos de la lista */
+.task-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Último elemento de la lista */
+.task-list li:last-child {
+  border-bottom: none;
+}
+
+/* Título de la tarea */
+.task-list li h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* Descripción de la tarea */
+.task-list li p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+/* Fuente para el texto de las tareas */
+.task-list-task p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  color: #b5b0b0; /* Cambiado el color del texto para hacerlo menos oscuro */
+}
+
+/* Estilos responsive */
+@media (max-width: 600px) {
+  /* Formulario */
+  .task-list form {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ajustes para elementos impares */
+  .task-list form div:nth-child(odd) {
+    grid-column: span 2;
+  }
+
+  /* Botón */
+  .task-list form button {
+    grid-column: span 2;
+  }
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  /* Fondo oscuro para el contenedor de la lista de tareas */
+  .task-list,
+  .task-list-form {
+    background-color: #263238; /* Cambiado el color de fondo */
+    color: #FFFFFF; /* Cambiado el color del texto */
+  }
+
+  /* Fondo oscuro para los botones */
+  .task-list-controls button {
+    background-color: #4CAF50; /* Cambiado el color del botón */
+    color: #FFFFFF; /* Cambiado el color del texto */
+  }
+
+  /* Efecto de hover para botones en modo oscuro */
+  .task-list-controls button:hover {
+    background-color: #388E3C; /* Cambiado el color del botón al pasar el ratón */
+  }
+
+  /* Fondo oscuro para las tareas */
+  .task-list-task {
+    background-color: #37474F; /* Cambiado el color de fondo */
+    border-color: #4CAF50; /* Cambiado el color del borde */
+    color: #EEE; /* Cambiado el color del texto */
+  }
+
+  /* Efecto de hover para las tareas en modo oscuro */
+  .task-list-task:hover {
+    background-color: #455A64; /* Cambiado el color de fondo al pasar el ratón */
+  }
+
+  /* Fondo oscuro para el contenedor principal */
+  .task-container,
+  .task-container-list,
+  .task-list-tasks-container {
+    background-color: #263238; /* Cambiado el color de fondo */
+  }
+
+  /* Borde oscuro para los contenedores */
+  .task-list,
+  .task-list-form,
+  .task-container,
+  .task-container-list,
+  .task-list-tasks-container {
+    border-color: #4CAF50; /* Cambiado el color del borde */
+  }
+}
+
+/* Sombreado de los elementos al enfocarse */
+.task-list input:focus,
+.task-list textarea:focus,
+.task-list select:focus,
+.task-list button:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Bordes redondeados para los botones */
+.task-list button {
+  border-radius: 4px;
+}
+
+/* Transiciones suaves para los cambios de color */
+.task-list-task,
+.task-list-form,
+.task-list-controls button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ajustes en la separación entre elementos */
+.task-list,
+.task-list-form,
+.task-list-controls button {
+  margin-bottom: 15px;
+}
+
+/* Sombreado sutil para los elementos principales */
+.task-list,
+.task-list-form,
+.task-list-controls {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los elementos deshabilitados */
+.task-list input:disabled,
+.task-list textarea:disabled,
+.task-list select:disabled,
+.task-list button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,0 +1,269 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "constructora-task",
+    "collectionId": "d45f0f80-6df3-41bd-a5f7-61d68091a842",
+    "dateExported": "2024-04-28T01:35:34.997Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "6a200193-9e47-474d-bda6-7a48c937dec5",
+            "name": "authorized",
+            "containerId": "6e86a7d8-782b-4033-9bfc-a874a8a33d2a",
+            "created": "2024-04-27T23:21:08.626Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "c89d2c8f-7e1a-46c1-a471-cc128accd328",
+            "name": "no-autorized",
+            "containerId": "6e86a7d8-782b-4033-9bfc-a874a8a33d2a",
+            "created": "2024-04-27T23:00:52.276Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "6e86a7d8-782b-4033-9bfc-a874a8a33d2a",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-04-27T23:21:27.604Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "559a3522-a918-49b8-a042-df96d8309bb6",
+            "name": "Task",
+            "containerId": "",
+            "created": "2024-04-28T01:16:42.833Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "fe27e1e3-da5b-4356-ae59-4a3c9dd5e295",
+            "colId": "d45f0f80-6df3-41bd-a5f7-61d68091a842",
+            "containerId": "c89d2c8f-7e1a-46c1-a471-cc128accd328",
+            "name": "login",
+            "url": "/user",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-27T23:00:52.281Z",
+            "modified": "2024-04-27T23:29:25.544Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "jnoj"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "bbdc27d2-170e-4706-bb95-60e36f10b107",
+            "colId": "d45f0f80-6df3-41bd-a5f7-61d68091a842",
+            "containerId": "6a200193-9e47-474d-bda6-7a48c937dec5",
+            "name": "modify",
+            "url": "/user/modify",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2024-04-27T23:21:45.471Z",
+            "modified": "2024-04-27T23:22:49.496Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Josue"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "9f27e800-58f7-4b9a-b822-ef5581849275",
+            "colId": "d45f0f80-6df3-41bd-a5f7-61d68091a842",
+            "containerId": "c89d2c8f-7e1a-46c1-a471-cc128accd328",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-27T23:00:52.281Z",
+            "modified": "2024-04-27T23:17:51.128Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Joshua Eli Isaac"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Realiquez Sosa"
+                    },
+                    {
+                        "name": "username",
+                        "value": "jrealiquez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345"
+                    },
+                    {
+                        "name": "email",
+                        "value": "jrealiquez@kinal.edu.gt"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "4a44248c-15a5-43a9-933d-51c26ed33ebb",
+            "colId": "d45f0f80-6df3-41bd-a5f7-61d68091a842",
+            "containerId": "6a200193-9e47-474d-bda6-7a48c937dec5",
+            "name": "password",
+            "url": "/user/password",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-04-27T23:23:13.080Z",
+            "modified": "2024-04-27T23:29:36.062Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "oldPassword",
+                        "value": "12345"
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "12345"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "7dfafb18-63fb-4fd2-a996-31fc93a9d806",
+            "colId": "d45f0f80-6df3-41bd-a5f7-61d68091a842",
+            "containerId": "6a200193-9e47-474d-bda6-7a48c937dec5",
+            "name": "delete",
+            "url": "/user/delete",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-04-27T23:29:51.436Z",
+            "modified": "2024-04-27T23:31:58.444Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "password",
+                        "value": "12345"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "1abc8622-4488-4ebd-92ae-ca388e7dd5f1",
+            "colId": "d45f0f80-6df3-41bd-a5f7-61d68091a842",
+            "containerId": "559a3522-a918-49b8-a042-df96d8309bb6",
+            "name": "create",
+            "url": "/task/create",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-28T01:16:47.041Z",
+            "modified": "2024-04-28T01:33:12.439Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Realizar inventariado"
+                    },
+                    {
+                        "name": "startDate",
+                        "value": "2024-04-27"
+                    },
+                    {
+                        "name": "status",
+                        "value": "to-do"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "944201e7-13cd-4973-8b4c-a6f3c56c37d6",
+            "colId": "d45f0f80-6df3-41bd-a5f7-61d68091a842",
+            "containerId": "559a3522-a918-49b8-a042-df96d8309bb6",
+            "name": "modify",
+            "url": "/task/modify/662da7598b67a7136f3bb7d9",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-04-28T01:26:03.348Z",
+            "modified": "2024-04-28T01:33:26.889Z",
+            "headers": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "Necesito realizar el inventario de las cosas antes de las 5 pm"
+                    },
+                    {
+                        "name": "endDate",
+                        "value": "2024-04-28"
+                    },
+                    {
+                        "name": "status",
+                        "value": "done"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "de51f1b0-7f5d-4f52-9cfe-9020be7d472a",
+            "colId": "d45f0f80-6df3-41bd-a5f7-61d68091a842",
+            "containerId": "559a3522-a918-49b8-a042-df96d8309bb6",
+            "name": "get",
+            "url": "/task/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-04-28T01:31:16.750Z",
+            "modified": "2024-04-28T01:31:30.856Z",
+            "headers": []
+        },
+        {
+            "_id": "c5a28c5d-c56f-4696-9598-7cbacbd8fa4c",
+            "colId": "d45f0f80-6df3-41bd-a5f7-61d68091a842",
+            "containerId": "559a3522-a918-49b8-a042-df96d8309bb6",
+            "name": "delete",
+            "url": "/task/delete/662da547d5a5e0281b964bde",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-04-28T01:31:47.259Z",
+            "modified": "2024-04-28T01:32:02.335Z",
+            "headers": []
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjJkOGExMDgzODU2MzA3ZmFkMzE5MTIiLCJ1c2VybmFtZSI6Impub2oiLCJuYW1lIjoiSm9zdWUiLCJpYXQiOjE3MTQyNjc0NTAsImV4cCI6MTcxNDI3MTA1MH0.cGDouTgVFyH8V0LnkRVkelcHuqjVwXqzrTWLQWJArMA"
+            }
+        ],
+        "options": {
+            "baseUrl": "localhost:2657"
+        }
+    },
+    "ref": "nEtZODyWkGO-UY-66F_JU9e6bB8FIvdFvz9MDksCwtgwMPmP02yZ7r0RaLuP-N4AGmxneabWUVL9Yg5kIhql-w"
+}
